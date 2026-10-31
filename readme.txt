@@ -3,7 +3,7 @@ Contributors: binzhan
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.4.2
+Stable tag: 1.4.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, education, news, custom-menu, footer-widgets, right-sidebar, threaded-comments, translation-ready
@@ -32,6 +32,10 @@ This package bundles no stock photography and no remote demo images. The include
 The theme does not collect analytics, does not set tracking cookies, and does not store front-end user preferences. The theme does not request external font files.
 
 == Changelog ==
+= 1.4.3 =
+* Tighten vertical section padding and internal spacing across the long home after the typography reduction.
+* Reduce header, footer, and shared section spacing.
+
 = 1.4.2 =
 * Reduce display, section, article, and interface type sizes while preserving the body reading size.
 
