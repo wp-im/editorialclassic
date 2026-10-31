@@ -1,6 +1,6 @@
 body { background: #f7f7f7; color: #1a1a1a; font-family: system-ui, sans-serif; font-size: 17px; line-height: 1.65; }
-h1, h2, h3, h4, h5, h6 { font-family: ui-serif, Georgia, serif; font-weight: 700; line-height: 1.12; }
+h1, h2, h3, h4, h5, h6 { font-family: system-ui, sans-serif; font-weight: 700; line-height: 1.12; }
 a { color: #1a1a1a; text-underline-offset: .18em; }
-blockquote { border-left: 3px solid #101010; padding-left: 1rem; font-family: ui-serif, Georgia, serif; }
+blockquote { border-left: 3px solid #101010; padding-left: 1rem; font-family: system-ui, sans-serif; }
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid #d2d2d2; padding: .7rem .8rem; }

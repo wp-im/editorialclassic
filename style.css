@@ -1,7 +1,7 @@
 /*
 Theme Name: Editorial Classic
 Description: A text-only classic editorial theme with black, white, and grey typography and nine article-led home sections.
-Version: 1.4.0
+Version: 1.4.1
 Author: bin zhan
 Text Domain: editorialclassic
 Domain Path: /languages
@@ -29,9 +29,9 @@ Tags: blog, education, news, custom-menu, footer-widgets, right-sidebar, threade
 	--tec-black: #101010;
 	--tec-white: #f7f7f7;
 	--tec-focus: #000000;
-	--tec-font-display: ui-serif, Georgia, serif;
+	--tec-font-display: system-ui, sans-serif;
 	--tec-font-body: system-ui, sans-serif;
-	--tec-font-editorial: ui-serif, Georgia, serif;
+	--tec-font-editorial: system-ui, sans-serif;
 	--tec-gutter: clamp(1.25rem, 4vw, 2rem);
 	--tec-container: 1120px;
 	--tec-content: 700px;
@@ -1340,24 +1340,32 @@ html, body { max-width: 100%; overflow-x: hidden; }
 	.stream-rank-item__title { font-size: 1.28rem; }
 }
 
-/* Long editorial index, shared with the Plus demo. */
 /* Long, article-led home: each band has its own editorial reading order. */
 .home-showcase {
 	--story-accent: var(--tec-ink);
-	--story-cover: #1c1c1e;
+	--story-cover: #101010;
 	--story-cover-ink: #fff;
-	--story-dossier: #f5f5f5;
-	--story-dispatches: #fff;
-	--story-conversation: #f5f5f5;
-	--story-route: #fff;
 }
 .home-showcase .editorial-section { padding-block: clamp(4rem, 7vw, 7rem); }
 .home-showcase .editorial-section__inner { min-width: 0; }
-.home-showcase .editorial-section:nth-child(3) { background: var(--story-dossier); }
-.home-showcase .editorial-section:nth-child(5) { background: var(--story-dispatches); }
-.home-showcase .editorial-section:nth-child(7) { background: var(--story-conversation); }
-.home-showcase .editorial-section:nth-child(8) { background: var(--story-route); }
-.home-showcase .editorial-section:nth-child(9) { background: var(--tec-paper-alt); }
+.home-showcase .story-departments,
+.home-showcase .story-conversation { background: #ededed; }
+.home-showcase .story-dossier,
+.home-showcase .story-notes,
+.home-showcase .story-archive { background: #fff; }
+.home-showcase .story-dispatches { background: #d7d7d7; }
+.home-showcase .story-reviews,
+.home-showcase .story-route {
+	--story-accent: #fff;
+	--tec-muted: #d0d0d0;
+	--tec-ink-soft: #e2e2e2;
+	--tec-rule: #606060;
+	--tec-rule-strong: #8a8a8a;
+	background: #303030;
+	color: #fff;
+}
+.home-showcase .story-route { background: #101010; }
+.home-showcase :is(.story-reviews, .story-route) :is(h2, h3) { color: #fff; }
 .home-showcase h1, .home-showcase h2, .home-showcase h3 { margin: 0; overflow-wrap: anywhere; }
 .home-showcase h2, .home-showcase h3 { letter-spacing: -.025em; }
 .home-showcase a { color: inherit; text-decoration: none; }
