@@ -1,7 +1,7 @@
 /*
 Theme Name: Editorial Classic
 Description: A text-only classic editorial theme with black, white, and grey typography and nine article-led home sections.
-Version: 1.4.3
+Version: 1.4.4
 Author: bin zhan
 Text Domain: editorialclassic
 Domain Path: /languages
@@ -1396,7 +1396,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .story-department h3 { font-size: 1.35rem; }
 .story-department ol { list-style: none; margin: .9rem 0 0; padding: 0; }
 .story-department li { border-top: 1px solid var(--tec-rule); padding: .6rem 0; line-height: 1.38; }
-.story-dossier__grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(1.5rem, 3vw, 3rem); }
+.story-dossier__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 3rem); }
 .story-dossier__feature { border-top: 3px solid var(--story-accent); padding-top: .8rem; }
 .story-dossier__feature h3 { max-width: 22ch; margin: .55rem 0 .65rem; font-size: clamp(1.55rem, 2.5vw, 1.9rem); line-height: 1.2; }
 .story-dossier__feature p { max-width: 48ch; margin: 0; font-size: 1.0625rem; }
@@ -1433,13 +1433,18 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .story-archive__list time, .story-archive__list li > span { color: var(--tec-muted); font-size: .875rem; font-variant-numeric: tabular-nums; }
 .story-archive__list a { font-weight: 600; }
 .story-archive__more { margin: 1rem 0 0; font-weight: 700; }
+@media (max-width: 1024px) {
+	.story-dossier__grid { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+	.story-dossier__feature { max-width: 38rem; }
+	.story-dossier__related { max-width: 48rem; }
+}
 @media (max-width: 900px) {
 	.story-departments__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 	.story-reviews__grid, .story-notes__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 680px) {
 	.home-showcase .editorial-section { padding-block: 1.75rem; }
-	.story-cover__grid, .story-dossier__grid, .story-conversation__grid { grid-template-columns: 1fr; }
+	.story-cover__grid, .story-conversation__grid { grid-template-columns: 1fr; }
 	.story-cover__rail { border-left: 0; border-top: 1px solid currentColor; padding: .8rem 0 0; }
 	.story-cover__rail article:first-of-type { padding-top: .8rem; }
 	.story-reviews__grid, .story-notes__grid { grid-template-columns: 1fr; }

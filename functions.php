@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'TINY_EDITORIAL_VERSION' ) ) {
-	define( 'TINY_EDITORIAL_VERSION', '1.4.3' );
+	define( 'TINY_EDITORIAL_VERSION', '1.4.4' );
 }
 
 if ( ! defined( 'TINY_EDITORIAL_DIR' ) ) {
